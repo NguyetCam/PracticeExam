@@ -24,8 +24,8 @@ public class Complex {
     }
 
     public Complex(Double realPart, Double imaginaryPart) {
-        this.realPart = realPart;
-        this.imaginaryPart = imaginaryPart;
+        setRealPart(realPart);
+        setImaginaryPart(imaginaryPart);
     }
 
     public Complex add(Complex otherNumber){
@@ -58,8 +58,8 @@ public class Complex {
 
     public String toString(){
         if(this.getImaginaryPart()<0){
-            return this.realPart+""+this.imaginaryPart+"*i";
+            return this.getRealPart()+""+this.getImaginaryPart()+"*i";
         }
-        return this.realPart+"+"+this.imaginaryPart+"*i";
+        return this.getRealPart()+"+"+this.getImaginaryPart()+"*i";
     }
 }
