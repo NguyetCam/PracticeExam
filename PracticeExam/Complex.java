@@ -58,8 +58,8 @@ public class Complex {
 
     public String toString(){
         if(this.getImaginaryPart()<0){
-            return this.getRealPart()+""+this.getImaginaryPart()+"*i";
+            return this.getRealPart()+""+this.getImaginaryPart()+"i";
         }
-        return this.getRealPart()+"+"+this.getImaginaryPart()+"*i";
+        return this.getRealPart()+"+"+this.getImaginaryPart()+"i";
     }
 }
