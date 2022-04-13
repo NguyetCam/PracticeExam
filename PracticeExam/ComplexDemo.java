@@ -2,7 +2,7 @@ package PracticeExam;
 
 public class ComplexDemo {
     public static void main(String[] args){
-        try {
+        try { //put in try catch if the division is diving to Complex(0,0) will cause exception
             Complex cp1 = new Complex(2.0,5.0),
                     add = cp1.add(new Complex(5.0,2.0)),
                     subtract = cp1.subtract(new Complex(2.0,1.0)),
